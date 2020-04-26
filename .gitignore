@@ -1,0 +1,5 @@
+# Header space for easier readability
+
+
+node_modules/
+.DS_Store
