@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- BOOTSTRAP minified-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>Friend Finder</title>
+</head>
+<body>
+    <div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3 fa fa-facebook-square d-flex justify-content-center">&nbspFriend Finder</h1>
+        <hr class="my-4">
+        <div class="hook mb-4"> Answer a few basic questions. </div>
+            <div class="hook mb-4">Then find the friend with the greatest compatibility!</div>
+        <div class="d-flex justify-content-center">
+        <a class="btn btn-primary btn-lg mr-1" href="survey.html" role="button"id="tblBtn">
+            <span class="glyphicon glyphicon-list-alt"></span>Go to Survey</a>
+        </div>
+      </div>
+    </div>
+
+<div class="container d-flex justify-content-end pr-4">
+    <a href="../../app/data/friends.js" class="mr-3">API Friends List</a>
+    <span> | </span>
+    <a href="https://github.com/jenkruk/FriendFinder"  class="ml-3">GitHub Repo</a>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+
+$("#tblBtn").on("click" ,function(){
+    $.get("/api/tables/" , function(data) {
+        console.log(data);
+        if (data) {
+         
+          $("#name").text(data.name);
+          $("#phone").text(data.phone);
+          $("#email").text(data.email);
+          $("#uniqueID").text(data.uniqueID);
+        }
+        else {
+          $("#name").text("oops there are no tales here.");
+          
+        }
+      });
+})
+
+</script>
