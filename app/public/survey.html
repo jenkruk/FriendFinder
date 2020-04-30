@@ -1,12 +1,310 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Survey</title>
-    </head>
-    <body>
-        <h1>This will be my survey</h1>
-        
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+  <!-- BOOTSTRAP minified-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+    <title> Friend Finder Survey </title>
+</head>
+
+  <body>
+
+    <div class = "container surveyContainer">
+
+      <h1 class = "row display-3 fa fa-facebook-square d-flex justify-content-center"> &nbsp Friend Finder </h1>
+
+      <hr class = "my-4">
+      
+      <h2 class = " row d-flex justify-content-center pt-3"> Answer the questions below to find your new friend! </h2>
+
+      <div class="row d-flex justify-content-center pt-3">
+        <a type = "submit" href="./home.html">
+          <i class = "fa fa-thumbs-up" aria-hidden = "true"></i>
+          Return home
+        </a>
+      </div>
+
+      <hr class = "mt-2 mb-4">
+
+        <h4 class = "row pl-5 mt-4 ml-1">Name </h4>
+        <input type = "text" id = "name" class = "form-control w-50" placeholder = "Enter your name here (required)" required = "">
+      
+        <h5 class = "row pl-5 mt-4 ml-1"> Enter a link to your photo (required)</h5>
+        <input type = "text" id = "photo" class = "form-control w-50 mb-4" placeholder = "example: "required = "">
+      
+      <hr>
+      
+      <div class = "row">
+
+        <form action = " " class = "col-sm-10 mb-3 pb-4"> <!--Took out of action - example from w3 schools:  /action_page.php-->
+          <ol>
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+            
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label>
+
+            <li class = "mb-3 font-weight-bold"> Single or Double Quotes? </li>
+            <input type = "radio" id = "1" name = "quotes" value = "1">
+            <label for = "1"> Single quotes </label> <br>
+            <input type = "radio" id = "2" name = "quotes" value = "2">
+            <label for = "2"> Single most of the time </label> <br>
+            <input type = "radio" id = "3" name = "quotes" value = "3">
+            <label for = "3"> Undecided </label> <br>
+            <input type = "radio" id = "4" name = "quotes" value = "4">
+            <label for = "4"> Double most of the time </label> <br>
+            <input type = "radio" id = "5" name = "quotes" value = "5">
+            <label for = "5" class= "mb-4"> Double quotes </label> <br>
+
+          </ol>
+
+          <!-- Submit Button -->
+          <button type = "submit" class = "btn btn-lg ml-5 mb-3 rounded-0 shadow" id = "submitBtn">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit
+          </button>
+
+        </form>
+
+      </div>  <!-- end col-sm-10 -->
+
+          <!-- --------------------------------- FOOTER ------------------------------- -->
+
+          <footer class = "row border-top mx-auto py-4 d-flex justify-content-center homeFooter">
+          <a href = "../../app/data/friends.js" target = "_blank" class = "mr-3">
+            <i class="fa fa-bars"></i>
+            API Friends List </a>
+          <span> | </span>
+          <a href = "https://github.com/jenkruk/FriendFinder"  target = "_blank" class = "ml-3"> 
+            <i class="fa fa-github"></i>
+            GitHub Repo </a>
+          </footer>
+      
+    </div> <!-- end container -->
+      
+        <!-- --------------------------------- MODAL ------------------------------- -->
+
+        <div id="results-modal" class="modal fade" role="dialog" style="display: none;">
+          <div class="modal-dialog">
+      
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h2 class="modal-title"><strong>Best Match</strong></h2>
+              </div>
+              <div class="modal-body">
+                <h2 id="match-name"></h2>
+                <img id="match-img" src="" alt="">
+              </div>
+              <div class = "modal-footer">
+                <button type = "button" class = "btn" data-dismiss = "modal"> Close </button>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+
+         <!-- ------------------------------- JAVASCRIPT ----------------------------- -->
+      
+        <script type="text/javascript">
+
+          // Chosen CSS
+          var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+              allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+              disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+              no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+              width: "95%"
+            }
+          };
+      
+          for (var selector in config) {
+            $(selector).chosen(config[selector]);
+          }
+      
+          // Capture the form inputs
+          $("#submit").on("click", function(event) {
+            event.preventDefault();
+      
+            // Form validation
+            function validateForm() {
+              var isValid = true;
+              $(".form-control").each(function() {
+                if ($(this).val() === "") {
+                  isValid = false;
+                }
+              });
+      
+              $(".chosen-select").each(function() {
+      
+                if ($(this).val() === "") {
+                  isValid = false;
+                }
+              });
+              return isValid;
+            }
+      
+            // If all required fields are filled
+            if (validateForm()) {
+              // Create an object for the user"s data
+              var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                  $("#1").val(),
+                  $("#2").val(),
+                  $("#3").val(),
+                  $("#4").val(),
+                  $("#5").val(),
+                  $("#6").val(),
+                  $("#7").val(),
+                  $("#8").val(),
+                  $("#9").val(),
+                  $("#10").val()
+                ]
+              };
+      
+              // AJAX post the data to the friends API.
+              $.post("/api/friends", userData, function(data) {
+      
+                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src", data.photo);
+      
+                // Show the modal with the best match
+                $("#results-modal").modal("toggle");
+      
+              });
+            } else {
+              alert("Please fill out all fields before submitting!");
+            }
+          });
+        </script>
+
+      </body>
     </html>

@@ -1,9 +1,0 @@
-/* Header space for easier readability */
-
-
-.hook {
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-}
