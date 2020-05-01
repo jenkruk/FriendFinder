@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
     <title> Friend Finder Survey </title>
 </head>
@@ -30,7 +30,7 @@
 
       <hr class = "my-4">
       
-      <h2 class = "row d-flex justify-content-center"> Answer the questions below to find your new friend! </h2>
+      <h2 class = "row d-flex justify-content-center text-center"> Answer the questions below to find your new friend! </h2>
 
       <div class="row d-flex justify-content-center pt-2">
         <a type = "submit" href="./home.html">
@@ -41,34 +41,36 @@
 
       <hr class = "mt-3 mb-4">
 
-        <h5 class = "row pl-5 mt-4 ml-1">Name </h5>
-        <input type = "text" id = "name" class = "form-control w-50 ml-5" placeholder = "Enter your name here (required)" required = "">
+      <h5 class = "row pl-5 mt-4 ml-1">Name </h5>
+      <input type = "text" id = "name" class = "form-control w-50 ml-5" placeholder = "Enter your name here (required)" required = "">
       
-        <h5 class = "row pl-5 mt-4 ml-1"> Enter a link to your photo </h5>
-        <input type = "text" id = "photo" class = "form-control w-50 mb-4 ml-5" placeholder = "(required) example: https://i.picsum.photos/id/1025/400/400.jpg "required = "">
+      <h5 class = "row pl-5 mt-4 ml-1"> Enter a link to your photo </h5>
+      <input type = "text" id = "photo" class = "form-control w-50 mb-4 ml-5" placeholder = "(required) example: https://i.picsum.photos/id/1025400/400.jpg "required = ""> 
+        
+      <div class="ml-5">  https://i.picsum.photos/id/1025/400/400.jpg </div>
       
       <hr>
       
-      <div class = "row pl-4">
+      <div class = "row form pl-5 col-sm-10 mb-3 pb-4">
 
         <!-- Took out of action - example from w3 schools:  /action_page.php -->
-        <form action = " " class = "col-sm-10 mb-3 pb-4"> 
+        <form action = "/FriendFinder/app/data/friends.js" class = ""> 
           <ol>
             <!-- ---------------------- QUESTION 1 ---------------------- -->
             <li class = "mb-3 font-weight-bold"> Pineapple on pizza is... </li>
-            <input type = "radio" id = "1" name = "pizza" value = "1">
+            <input type = "radio" id = "1" name = "pizza" value = 1>
             <label for = "1"> Delicious </label> <br>
-            <input type = "radio" id = "2" name = "pizza" value = "2">
+            <input type = "radio" id = "2" name = "pizza" value = 2>
             <label for = "2"> Fine </label> <br>
-            <input type = "radio" id = "3" name = "pizza" value = "3">
+            <input type = "radio" id = "3" name = "pizza" value = 3>
             <label for = "3"> I don't judge my pizza </label> <br>
-            <input type = "radio" id = "4" name = "pizza" value = "4">
+            <input type = "radio" id = "4" name = "pizza" value = 4>
             <label for = "4"> Why though? </label> <br>
-            <input type = "radio" id = "5" name = "pizza" value = "5">
+            <input type = "radio" id = "5" name = "pizza" value = 5>
             <label for = "5" class= "mb-4"> Disgusting </label>
             
             <!-- ---------------------- QUESTION 2 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> In your group of friends, you are mostly... </li>
+            <!-- <li class = "mb-3 font-weight-bold"> In your group of friends, you are mostly... </li>
             <input type = "radio" id = "1" name = "title" value = "1">
             <label for = "1"> The Organizer </label> <br>
             <input type = "radio" id = "2" name = "title" value = "2">
@@ -78,23 +80,23 @@
             <input type = "radio" id = "4" name = "title" value = "4">
             <label for = "4"> The Trouble-Maker </label> <br>
             <input type = "radio" id = "5" name = "title" value = "5">
-            <label for = "5" class= "mb-4"> The No-Show </label>
+            <label for = "5" class= "mb-4"> The No-Show </label> -->
 
             <!-- ---------------------- QUESTION 3 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> Are you an optimist or a pessimist? </li>
+            <!-- <li class = "mb-3 font-weight-bold"> Are you an optimist or a pessimist? </li>
             <input type = "radio" id = "1" name = "happy" value = "1">
-            <label for = "1"> My cup overfloweth #blessed </label> <br>
+            <label for = "1"> My cup overfloweth (#blessed) </label> <br>
             <input type = "radio" id = "2" name = "happy" value = "2">
             <label for = "2"> My cup is full </label> <br>
             <input type = "radio" id = "3" name = "happy" value = "3">
             <label for = "3"> My cup is equal parts full and empty </label> <br>
             <input type = "radio" id = "4" name = "happy" value = "4">
             <label for = "4"> I can't find my cup </label> <br>
-            <input type = "radio" id = "5" name = "happy" value = "5">happy
-            <label for = "5" class= "mb-4"> My cup is broken and bleeding </label>
+            <input type = "radio" id = "5" name = "happy" value = "5">
+            <label for = "5" class= "mb-4"> My cup is broken and bleeding </label> -->
 
             <!-- ---------------------- QUESTION 4 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> For meals at home you most often... </li>
+            <!-- <li class = "mb-3 font-weight-bold"> For meals at home you most often... </li>
             <input type = "radio" id = "1" name = "meals" value = "1">
             <label for = "1"> Cook </label> <br>
             <input type = "radio" id = "2" name = "meals" value = "2">
@@ -104,10 +106,10 @@
             <input type = "radio" id = "4" name = "meals" value = "4">
             <label for = "4"> Order Delivery </label> <br>
             <input type = "radio" id = "5" name = "meals" value = "5">
-            <label for = "5" class= "mb-4"> Pick-up at a drive-thru </label>
+            <label for = "5" class= "mb-4"> Pick-up at a drive-thru </label> -->
 
             <!-- ---------------------- QUESTION 5 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> It's your turn to pick the movie. 
+            <!-- <li class = "mb-3 font-weight-bold"> It's your turn to pick the movie. 
               Which is your go-to? </li>
             <input type = "radio" id = "1" name = "movie" value = "1">
             <label for = "1"> Comedy </label> <br>
@@ -118,10 +120,10 @@
             <input type = "radio" id = "4" name = "movie" value = "4">
             <label for = "4"> Drama </label> <br>
             <input type = "radio" id = "5" name = "movie" value = "5">
-            <label for = "5" class= "mb-4"> Horror </label>
+            <label for = "5" class= "mb-4"> Horror </label> -->
 
             <!-- ---------------------- QUESTION 6 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> Time to exercise! You'll be... </li>
+            <!-- <li class = "mb-3 font-weight-bold"> Time to exercise! You'll be... </li>
             <input type = "radio" id = "1" name = "fitness" value = "1">
             <label for = "1"> Getting in some cardio </label> <br>
             <input type = "radio" id = "2" name = "fitness" value = "2">
@@ -131,10 +133,10 @@
             <input type = "radio" id = "4" name = "fitness" value = "4">
             <label for = "4"> Lifting weights </label> <br>
             <input type = "radio" id = "5" name = "fitness" value = "5">
-            <label for = "5" class= "mb-4"> Taking a group class </label>
+            <label for = "5" class= "mb-4"> Taking a group class </label> -->
 
             <!-- ---------------------- QUESTION 7 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> You're out with friends. What are you drinking? </li>
+            <!-- <li class = "mb-3 font-weight-bold"> You're out with friends. What are you drinking? </li>
             <input type = "radio" id = "1" name = "drinks" value = "1">
             <label for = "1"> Coffee or Tea </label> <br>
             <input type = "radio" id = "2" name = "drinks" value = "2">
@@ -144,10 +146,10 @@
             <input type = "radio" id = "4" name = "drinks" value = "4">
             <label for = "4"> Beer </label> <br>
             <input type = "radio" id = "5" name = "drinks" value = "5">
-            <label for = "5" class= "mb-4"> Wine  or a Mixed Drink </label>
+            <label for = "5" class= "mb-4"> Wine  or a Mixed Drink </label> -->
 
             <!-- ---------------------- QUESTION 8 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> You've won concert tickets! Which do you choose? </li>
+            <!-- <li class = "mb-3 font-weight-bold"> You've won concert tickets! Which do you choose? </li>
             <input type = "radio" id = "1" name = "music" value = "1">
             <label for = "1"> Pink </label> <br>
             <input type = "radio" id = "2" name = "music" value = "2">
@@ -157,10 +159,10 @@
             <input type = "radio" id = "4" name = "music" value = "4">
             <label for = "4"> Eminem </label> <br>
             <input type = "radio" id = "5" name = "music" value = "5">
-            <label for = "5" class= "mb-4"> Chris Stapleton </label>
+            <label for = "5" class= "mb-4"> Chris Stapleton </label> -->
 
             <!-- ---------------------- QUESTION 9 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> Comic Sans Font </li>
+            <!-- <li class = "mb-3 font-weight-bold"> Comic Sans Font </li>
             <input type = "radio" id = "1" name = "fonts" value = "1">
             <label for = "1"> Absolutely Not </label> <br>
             <input type = "radio" id = "2" name = "fonts" value = "2">
@@ -170,32 +172,33 @@
             <input type = "radio" id = "4" name = "fonts" value = "4">
             <label for = "4"> Please don't </label> <br>
             <input type = "radio" id = "5" name = "fonts" value = "5">
-            <label for = "5" class= "sans mb-4"> Nobody puts Baby in a corner! </label>
+            <label for = "5" class= "sans mb-4"> Nobody puts Baby in a corner! </label> -->
 
             <!-- ---------------------- QUESTION 10 ---------------------- -->
-            <li class = "mb-3 font-weight-bold"> Were Ross and Rachel on a break? </li>
+            <!-- <li class = "mb-3 font-weight-bold"> Were Ross and Rachel on a break? </li>
             <input type = "radio" id = "1" name = "break" value = "1">
             <label for = "1"> Yes! </label> <br>
             <input type = "radio" id = "2" name = "break" value = "2">
-            <label for = "2"> Technically I guess this is accurate </label> <br>
+            <label for = "2"> Technically, I guess this is accurate </label> <br>
             <input type = "radio" id = "3" name = "break" value = "3">
             <label for = "3"> Who? </label> <br>
             <input type = "radio" id = "4" name = "break" value = "4">
             <label for = "4"> Barely </label> <br>
             <input type = "radio" id = "5" name = "break" value = "5">
-            <label for = "5" class= "mb-4"> Not long enough to make it okay! </label> <br>
+            <label for = "5" class= "mb-4"> Not long enough to make it okay! </label> -->
 
           </ol>
 
           <!-- Submit Button -->
-          <button type = "submit" class = "btn btn-lg ml-4 mb-3 shadow" id = "submitBtn">
+          <!-- Add to button for ease of editing: data-toggle="modal" data-target="#results-modal"-->
+          <button type = "submit" class = "btn btn-lg ml-4 mb-3 shadow" id = "submitBtn" >
             <i class="fa fa-check-circle" aria-hidden="true"></i>
             Find My Match
           </button>
 
         </form>
 
-      </div>  <!-- end col-sm-10 -->
+      </div>  <!-- end form -->
 
           <!-- --------------------------------- FOOTER ------------------------------- -->
 
@@ -213,57 +216,37 @@
       
         <!-- --------------------------------- MODAL ------------------------------- -->
 
-        <div id="results-modal" class="modal fade" role="dialog" style="display: none;">
+        <div id="results-modal" class="modal" role="dialog" style="display: none">
           <div class="modal-dialog">
       
             <!-- Modal content-->
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-                <h2 class="modal-title"><strong> Best Match </strong></h2>
+              <div class="modal-header d-flex justify-content-center">
+                <h2 class="modal-title"> Your new &nbsp<img src="/assets/images/friends.png" alt="friends logo" >&nbsp is:</h2>
               </div>
-              <div class="modal-body">
-                <h2 id="match-name"></h2>
+              <div class="row modal-body d-flex justify-content-center align-middle pt-4">
                 <img id="match-img" src="" alt="">
+              </div>
+              <div class="row modal-body d-flex justify-content-center">
+                <h2 class= "row text-center" id="match-name"></h2>
               </div>
               <div class = "modal-footer">
                 <button type = "button" class = "btn" data-dismiss = "modal"> Close </button>
               </div>
             </div>
-      
           </div>
         </div>
 
          <!-- ------------------------------- JAVASCRIPT ----------------------------- -->
       
         <script type="text/javascript">
-
-          // Chosen CSS
-          var config = {
-            ".chosen-select": {},
-            ".chosen-select-deselect": {
-              allow_single_deselect: true
-            },
-            ".chosen-select-no-single": {
-              disable_search_threshold: 10
-            },
-            ".chosen-select-no-results": {
-              no_results_text: "Oops, nothing found!"
-            },
-            ".chosen-select-width": {
-              width: "95%"
-            }
-          };
-      
-          for (var selector in config) {
-            $(selector).chosen(config[selector]);
-          }
       
           // Capture the form inputs
-          $("#submit").on("click", function(event) {
+          $("#submitBtn").on("click", function(event) {
             event.preventDefault();
       
             // Form validation
+            // .form-control is for the users name and photo input
             function validateForm() {
               var isValid = true;
               $(".form-control").each(function() {
@@ -271,7 +254,8 @@
                   isValid = false;
                 }
               });
-      
+              
+              //.chosen-select is for the drop down menu in the sample project
               $(".chosen-select").each(function() {
       
                 if ($(this).val() === "") {
@@ -279,34 +263,35 @@
                 }
               });
               return isValid;
-            }
+            };
       
             // If all required fields are filled
             if (validateForm()) {
-              // Create an object for the user"s data
+              // Create an object for the user's data
               var userData = {
                 name: $("#name").val(),
                 photo: $("#photo").val(),
                 scores: [
-                  $("#1").val(),
-                  $("#2").val(),
-                  $("#3").val(),
-                  $("#4").val(),
-                  $("#5").val(),
-                  $("#6").val(),
-                  $("#7").val(),
-                  $("#8").val(),
-                  $("#9").val(),
-                  $("#10").val()
+                  $("input[name = 'pizza']:checked").val(),
+                  $("").val(),
+                  $("").val(),
+                  $("").val(),
+                  $("").val(),
+                  $("").val(),
+                  $("").val(),
+                  $("").val(),
+                  $("").val(),
+                  $("").val()
                 ]
               };
-      
-              // AJAX post the data to the friends API.
+              console.log(userData);
+
+              //AJAX post the data to the friends API.
               $.post("/api/friends", userData, function(data) {
       
                 // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                $("#match-name").text(data.name);
-                $("#match-img").attr("src", data.photo);
+                $("#match-name").text(data.name); // where do I define the id of match-name... in friends.js?
+                $("#match-img").attr("src", data.photo); // where do I define the id of match-img... in friends.js?
       
                 // Show the modal with the best match
                 $("#results-modal").modal("toggle");
@@ -316,6 +301,7 @@
               alert("Please fill out all fields before submitting!");
             }
           });
+          
         </script>
 
       </body>

@@ -1,8 +1,9 @@
 // Header space for easier readability
 
+
 // You should save your application's data inside of `app/data/friends.js` as an array of objects. 
 
-```json
+var friends = [
 {
     "name": "Monica Geller",
     "photo": "https://vignette.wikia.nocookie.net/friends/images/2/2f/Monica_Geller-Bing_Season_10.png",
@@ -18,7 +19,7 @@
         1,
         5
       ]
-}
+},
 
 {
     "name": "Chandler Bing",
@@ -35,7 +36,7 @@
         1,
         2
       ]
-}
+},
 
 {
     "name": "Rachel Greene",
@@ -52,7 +53,7 @@
         2,
         5
       ]
-    }
+},
 
 {
     "name": "Ross Geller",
@@ -69,7 +70,7 @@
         3,
         1
       ]
-    }
+},
 
 {
     "name": "Phoebe Buffay",
@@ -86,7 +87,7 @@
         4,
         3
       ]
-    }
+},
 
 {
     "name": "Joey Tribbiani",
@@ -104,5 +105,6 @@
         4
       ]
     }
+];
 
-```
+module.exports = friends;

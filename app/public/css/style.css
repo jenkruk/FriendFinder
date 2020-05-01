@@ -93,3 +93,27 @@ input[type="radio"]:checked + label {
 #submitBtn:active {
     font-size: 1.25rem;
 }
+
+/* Modal */
+
+.modal {
+    height: relative;
+}
+
+#match-img {
+    width: 50%;
+}
+
+.modal .btn {
+    background-color: #156796;
+    color: white;
+}
+
+.modal .btn:hover {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.modal .btn:active {
+    font-size: 1rem;
+}
