@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #0083A3;
-    color: #0083A3;
+    background-color: #156796;
+    color: #156796;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -31,19 +31,19 @@ h5 {
 }
 
 a {
-    color: #0083A3;
+    color: #156796;
     margin-top: 0;
 }
 
 a:hover {
-    color: #FF8221;
+    color: rgb(232, 106, 10);
 }
 /* HOME PAGE */
 
 .homeBtn {
     width: relative;
     padding: 1vh 1vw 1vh 1vw;
-    background-color:#0083A3;
+    background-color:#156796;
     color: white;
 }
 
@@ -75,9 +75,13 @@ input[type="radio"]:checked + label {
   font-weight: bold;
     }
 
+.sans {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.25rem;
+}
 
 #submitBtn {
-    background-color: #0083A3;;
+    background-color: #156796;
     color: white;
 }
 
