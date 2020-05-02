@@ -67,6 +67,10 @@ footer {
     margin-left: 2vw;
 }
 
+.surveyContainer .form-control {
+    width: 60%;
+}
+
 .container input::placeholder {
     color: lightgrey;
 }
