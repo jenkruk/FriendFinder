@@ -21,8 +21,9 @@ app.use(apiRoutes);
 
 // could also write below as: app.use(require("./app/routing/htmlRoutes.js");
 // below is more common
+// listed after the apiRoutes (on line 19 & 20) because the catch-all(*) at the end of htmlRoutes
 var htmlRoutes = require("./app/routing/htmlRoutes.js");
-app.use(htmlRoutes); // listed after the apiRoutes because the catch-all(*) at the end of htmlRoutes
+app.use(htmlRoutes); 
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);

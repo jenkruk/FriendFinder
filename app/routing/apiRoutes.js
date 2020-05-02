@@ -1,15 +1,17 @@
-
 // Header space for easier readability
+
 var route = require("express").Router();
 var friends = require("../data/friends");
 
-// Your `apiRoutes.js` file should contain two routes:
-  // A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
+  // GET route from the url `/api/friends`. 
+  // Displays a JSON of all possible friends.
   route.get("/api/friends", function(req, res) { 
     return res.json(friends);
   });
 
-  // A POST route `/api/friends`. This will be used to handle incoming survey results. This route will also be used thandle the compatibility logic. 
+  // POST to route `/api/friends` 
+  // Handles incoming survey results 
+  // Also handles the compatibility logic. 
   route.post("/api/friends",function(req,res){
     var user = req.body.scores
     var bestMatch;
