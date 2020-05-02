@@ -4,18 +4,18 @@ A party of one is no party at all!
 
 Be matched up with like minded friends after answering a few simple questions!
 
-### Click on the button to go to the survey
+## Click on the button to take the survey
 
 ![start](./app/public/assets/images/readMe/friendFinder.png)
 
-### Fill out the survey and click on the button to find your new friend!
+## Fill out the survey 
 
 ![enter-your-info](./app/public/assets/images/readMe/info.png)
 
-### Click on the button to find your new friend!
+## Click on the button to find your match
 ![find-your-match](./app/public/assets/images/readMe/findMyMatch.png)
 
-### Voila - you have been matched up with your new friend!
+## Voila - you have been matched up with your new friend!
 ![your-new-friend](./app/public/assets/images/readMe/mon.png)
 
 ## Built With
