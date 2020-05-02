@@ -47,7 +47,7 @@
       <h5 class = "row pl-5 mt-4 ml-1"> Enter a link to your photo </h5>
       <input type = "text" id = "photo" class = "form-control mb-1 ml-5" placeholder = "(required) example: https://i.picsum.photos/id/1025400/400.jpg "required = ""> 
         
-      <div class="note ml-5 font-italic">Psssst... need a link? ->  <span>https://i.picsum.photos/id/1025/400/400.jpg </span></div>
+      <div class="note ml-5 font-italic">Psssst... don't have a link?  Borrow this one! ->  <span>https://i.picsum.photos/id/1025/400/400.jpg </span></div>
       
       <hr>
       
@@ -203,7 +203,7 @@
           <!-- --------------------------------- FOOTER ------------------------------- -->
 
           <footer class = "row border-top mx-auto py-4 d-flex justify-content-center homeFooter">
-          <a href = "../../app/data/friends.js" target = "_blank" class = "mr-3">
+          <a href = "/api/friends" target = "_blank" class = "mr-3">
             <i class="fa fa-bars"></i>
             API Friends List </a>
           <span> | </span>
@@ -291,8 +291,8 @@
               $.post("/api/friends", userData, function(data) {
       
                 // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                $("#match-name").text(data.name); 
-                $("#match-img").attr("src", data.photo);
+                $("#match-name").text(data.name); // where do I define the id of match-name... in friends.js?
+                $("#match-img").attr("src", data.photo); // where do I define the id of match-img... in friends.js?
       
                 // Show the modal with the best match
                 $("#results-modal").modal("toggle");
