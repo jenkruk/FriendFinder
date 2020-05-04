@@ -21,18 +21,18 @@ var friends = require("../data/friends");
         var totalDifference = 0
         for (var j = 0; j < user.length; j++) {
             var diff = Math.abs(user[j] - currentScore[j]);
-            console.log(diff);
+            // console.log(diff);
             totalDifference += diff;
         }
         if(totalDifference<prevDiff){
             prevDiff=totalDifference
             bestMatch=friends[i]
         }
-        console.log("*****************************")
-        console.log("Total Difference", totalDifference);
+        // console.log("*****************************")
+        // console.log("Total Difference", totalDifference);
     }
     friends.push(req.body);
-    console.log("Your Best Friend is",bestMatch );
+    console.log("Your New Friend is", bestMatch.name);
     res.json(bestMatch);
 });
 

@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+   <!-- FAVICON -->
+   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
+
   <link rel="stylesheet" href="css/style.css">
 
     <title> Friend Finder Survey </title>
@@ -245,7 +248,7 @@
             event.preventDefault();
       
             // Form validation
-            // .form-control is for the users name and photo input
+            // validate the users name and photo input
             function validateForm() {
               var isValid = true;
               $(".form-control").each(function() {
@@ -254,7 +257,7 @@
                 }
               });
               
-              // .chosen-select is for the drop down menu in the sample project
+              // validate the radio buttons
               $(".chosen-select").each(function() {
       
                 if ($(this).val() === "") {
@@ -269,7 +272,7 @@
               // Create an object for the user's data
               console.log("Form is valid.")
               var userData = {
-                name: $("#name").val(),
+                name: $("#name").val().trim(),
                 photo: $("#photo").val(),
                 scores: [
                   $("input[name = 'pizza']:checked").val(),
@@ -290,8 +293,8 @@
               $.post("/api/friends", userData, function(data) {
       
                 // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                $("#match-name").text(data.name); // where do I define the id of match-name... in friends.js?
-                $("#match-img").attr("src", data.photo); // where do I define the id of match-img... in friends.js?
+                $("#match-name").text(data.name); 
+                $("#match-img").attr("src", data.photo); 
       
                 // Show the modal with the best match
                 $("#results-modal").modal("toggle");
